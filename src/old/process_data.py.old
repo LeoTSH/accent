@@ -1,0 +1,14 @@
+# Train: 819918 lines
+# Dev: 14884 lines
+# Test: 30000 lines
+
+from utils import process_dataset
+
+train_dataset = '../data/raw/raw_train.txt'
+dev_dataset = '../data/raw/raw_dev.txt'
+test_dataset = '../data/raw/raw_test.txt'
+
+processed_data_folder = '../data/processed/'
+
+process_dataset(dev_dataset, 'dev', processed_data_folder)
+process_dataset(test_dataset, 'test', processed_data_folder)
